@@ -1,4 +1,4 @@
-<h1 align="center">Scribble.rs Hackathon</h1>
+<h1 align="center">Scribble.rs Hackathon check</h1>
 
 <p align="center">
   <a href="https://github.com/scribble-rs/scribble.rs/actions">
