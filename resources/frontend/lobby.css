@@ -11,11 +11,12 @@
 
 #word-container {
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .guess-letter-underline {
     text-transform: uppercase;
-    border-bottom: 0.3rem black solid;
+    border-bottom: 0.3rem white solid;
 }
 
 .guess-letter {
