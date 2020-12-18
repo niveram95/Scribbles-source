@@ -22,8 +22,6 @@ phases:
       - GO111MODULE=on CGO_ENABLED=0 go build -ldflags="-w -s" -o ${TMP_DIR}/scribblers-al2 .
   post_build:
     commands:
-      - chmod +x ${TMP_DIR}/scripts
-      - cp -rp ${TMP_DIR}/* ${OUTPUT_DIR}/
       - echo Build completed on `date`
 
 artifacts:
