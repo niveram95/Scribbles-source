@@ -6,10 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/resources/base.css"/>
     <link rel="stylesheet" type="text/css" href="/resources/lobby.css"/>
     <link rel="icon" type="image/png" href="/resources/favicon.png"/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/css/emoji.css" rel="stylesheet">
             <style>
-            body { background-color: antiquewhite; }
         div.transbox {
           margin: 10px;
           background-color: #ffffff;
@@ -96,7 +93,7 @@
     <div id="chat">
         <div id="message-container"></div>
         <form class="message-input-form" onsubmit="return sendMessage()">
-            <input id="message-input" type="text" autocomplete="off" placeholder="Type your message" data-emojiable="true"/>
+            <input id="message-input" type="text" autocomplete="on" placeholder="Type your message"/>
         </form>
     </div>
     <div id="toolbox">
@@ -221,8 +218,7 @@
 </div>
 <script>
             document.getElementById("demo").innerHTML = "Invite link: " + window.location.href;
-    </script>
-
+</script>
 
 {{template "footer"}}
 
@@ -274,6 +270,7 @@
             kickDialog.style.visibility = "visible";
         }
     }
+   
 
     function hideKickDialog() {
         kickDialog.style.visibility = "hidden";
