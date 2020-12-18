@@ -96,7 +96,7 @@
     <div id="chat">
         <div id="message-container"></div>
         <form class="message-input-form" onsubmit="return sendMessage()">
-            <input id="message-input" type="text" data-emojiable="true" autocomplete="off" placeholder="Type your message"/>
+            <input id="message-input" type="text" autocomplete="off" placeholder="Type your message" data-emojiable="true"/>
         </form>
     </div>
     <div id="toolbox">
@@ -222,10 +222,7 @@
 <script>
             document.getElementById("demo").innerHTML = "Invite link: " + window.location.href;
     </script>
-<script src="lib/js/config.js"></script>
-<script src="lib/js/util.js"></script>
-<script src="lib/js/jquery.emojiarea.js"></script>
-<script src="lib/js/emoji-picker.js"></script>
+
 
 {{template "footer"}}
 
