@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /tmp
+  - source: /web.service
+    destination: /etc/systemd/system
+hooks:
+  ApplicationStart:
+    - location: start_app
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: stop_app
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: reload_systemd
+      timeout: 300
+      runas: root

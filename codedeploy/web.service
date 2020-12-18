@@ -1,0 +1,9 @@
+# /etc/systemd/system/web.service
+[Unit]
+Description=This is web daemon
+
+[Service]
+User=root
+Type=simple
+
+ExecStart=/bin/sh -c "/tmp/scribblers-al2 -portHTTP=80"
