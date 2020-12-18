@@ -272,13 +272,12 @@
     }
     
     function copyFunction() {
-      var copyText =  document.getElementById("demo").innerHTML;
+      var copyText =  document.getElementById("demo");
 
       copyText.select();
 
       document.execCommand("copy");
 
-      alert("Copied the text: " + document.getElementById("demo").innerHTML);
     }
 
     function hideKickDialog() {
