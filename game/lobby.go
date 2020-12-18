@@ -178,6 +178,8 @@ func HandleEvent(raw []byte, received *JSEvent, lobby *Lobby, player *Player) er
 	return nil
 }
 
+
+
 func handleMessage(input string, sender *Player, lobby *Lobby) {
 	trimmed := strings.TrimSpace(input)
 	if trimmed == "" {
