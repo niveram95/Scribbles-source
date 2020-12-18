@@ -96,7 +96,7 @@
 }
 
 #chat {
-    min-width: 15rem;
+    min-width: 10rem;
     height: 100%;
     display: grid;
     grid-template-rows: auto fit-content(100%);
